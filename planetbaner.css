@@ -1,0 +1,239 @@
+body{
+background-image: url(img/SPACE.svg);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;   
+border: none;
+box-shadow: none;
+border-style: none;
+}
+
+.spaceobj{
+position:fixed;
+margin: auto;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+background: none;
+}
+
+
+
+#sol{
+z-index: 8;
+width: 10%;
+
+}
+
+
+
+#Merkur{
+    z-index: 7;
+    width: 15%;
+    -webkit-animation: merkur 10s infinite linear;
+}
+
+#Merkur:hover{
+    
+}
+
+@-webkit-keyframes merkur{
+		0% {
+				-webkit-transform: rotate(0deg);
+         
+		}
+   
+		100% {
+				-webkit-transform: rotate(360deg);
+           
+    }}
+
+#Venus{
+        z-index: 2;
+    width: 25%;
+    -webkit-animation: venus 12s infinite linear;
+}
+@-webkit-keyframes venus{
+		0% {
+				-webkit-transform: rotate(0deg);
+         
+		}
+   
+		100% {
+				-webkit-transform: rotate(360deg);
+           
+    }}    
+    
+#Jorda{
+        z-index: 2;
+    width: 35%;
+    -webkit-animation: jorda 16s infinite linear;
+}
+@-webkit-keyframes jorda{
+		0% {
+				-webkit-transform: rotate(0deg);
+         
+		}
+   
+		100% {
+				-webkit-transform: rotate(360deg);
+           
+    }}    
+    
+
+#Mars{
+        z-index: 4;
+    width: 48%;
+    -webkit-animation: mars 18s infinite linear;
+
+}
+@-webkit-keyframes mars{
+		0% {
+				-webkit-transform: rotate(0deg);
+         
+		}
+   
+		100% {
+				-webkit-transform: rotate(360deg);
+           
+    }}    
+
+
+
+#stjerner{
+		-webkit-animation: stjernepuls 20s infinite linear;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position:fixed;
+margin: auto;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+}
+@-webkit-keyframes stjernepuls {
+		0% {
+		
+            opacity: 0.6;
+		}
+    50%{
+      
+      opacity: 0;
+    }
+		100% {
+
+       opacity: 0.6;
+		}
+}
+    
+#stjerner2{
+		-webkit-animation: stjernepuls2 20s infinite linear;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    position:fixed;
+margin: auto;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+}
+@-webkit-keyframes stjernepuls2 {
+		0% {
+		
+            opacity: 0;
+		}
+    50%{
+      
+      opacity: 0.6;
+    }
+		100% {
+
+       opacity: 0;
+		}
+}
+.dropdwn{border: none;
+width: 5%;
+background-color: white;
+border-radius: 0px 0px 30px 0px; 
+left: 0px;
+top: 0px;
+z-index: 3;
+position: fixed;
+}
+.dropdwn
+
+#gear:hover{
+-webkit-animation: gear 3s infinite linear;    
+    
+}
+@-webkit-keyframes gear{
+		0% {
+				-webkit-transform: rotate(0deg);
+         
+		}
+   
+		100% {
+				-webkit-transform: rotate(360deg);
+           
+    }}  
+
+
+.dropdwn:hover ~ #meny {
+    display: block;
+}
+
+#meny:hover ~ #gear {
+-webkit-animation: gear 3s infinite linear;    
+}
+
+
+#meny:hover{
+display: block;
+}
+#meny{
+left: 0px;
+top: 0px;
+position: fixed;
+height: 100%;
+background-color: white;
+color:  #727272;
+display: none;
+width: 10%;
+z-index: 1;
+}
+
+.info{    background-color: white;
+    right: 0px;
+    position: fixed;
+  
+    top: 0px;
+    height: 100%;
+    width: 15%;
+    
+   text-align: center;
+    display: none;
+z-index: 14;
+color: #727272;
+padding: 20px;
+}
+#Marsinf{
+
+}
+#Mars:hover ~ #Marsinf {
+    display: block;
+}
+
+#sol:hover ~ #solinf{
+    
+    display: block;
+}
+
+#Merkur:hover ~ #Merkurinfo{
+    
+    display: block;
+}
