@@ -8,7 +8,14 @@ border: none;
 box-shadow: none;
 border-style: none;
 }
+img {
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 
+}
 .spaceobj{
 position:fixed;
 margin: auto;
@@ -24,15 +31,32 @@ background: none;
 #sol{
 z-index: 8;
 width: 10%;
-
+-webkit-animation: stroler 5s infinite linear;  
 }
 
+  
+    
+
+@-webkit-keyframes stroler{
+		0% {
+				filter: brightness(1);
+          
+		}
+   	50% {
+			filter: brightness(1.3);
+      
+           
+    }
+		100% {
+			filter: brightness(1);
+            
+    }}  
 
 
 #Merkur{
     z-index: 7;
     width: 15%;
-    -webkit-animation: merkur 10s infinite linear;
+    -webkit-animation: merkur 3s infinite linear;
 }
 
 #Merkur:hover{
@@ -53,7 +77,7 @@ width: 10%;
 #Venus{
         z-index: 2;
     width: 25%;
-    -webkit-animation: venus 12s infinite linear;
+    -webkit-animation: venus 7.5s infinite linear;
 }
 @-webkit-keyframes venus{
 		0% {
@@ -67,9 +91,9 @@ width: 10%;
     }}    
     
 #Jorda{
-        z-index: 2;
+        z-index: 6;
     width: 35%;
-    -webkit-animation: jorda 16s infinite linear;
+    -webkit-animation: jorda 12s infinite linear;
 }
 @-webkit-keyframes jorda{
 		0% {
@@ -85,8 +109,8 @@ width: 10%;
 
 #Mars{
         z-index: 4;
-    width: 48%;
-    -webkit-animation: mars 18s infinite linear;
+    width: 42%;
+    -webkit-animation: mars 23s infinite linear;
 
 }
 @-webkit-keyframes mars{
@@ -236,4 +260,58 @@ padding: 20px;
 #Merkur:hover ~ #Merkurinfo{
     
     display: block;
+}
+#Jorda:hover ~ #JordaInf{
+    display: block;
+}
+
+#startskjerm{
+    
+width: 100%;
+height: 100%;
+position: fixed;
+background-color: white;
+z-index: 14;
+top: 0px;
+left: 0px;
+text-align: center;
+color: #727272;
+display: none;
+}
+
+
+
+@-webkit-keyframes swipe{
+		0% {
+			left: 0px;
+         top: 0px;
+		}
+   
+		99% {
+			
+        	left: 0px;
+         top: -3000px;   
+    }
+100% {
+			
+        	left: 0px;
+         top: -3000px;   
+  opacity: 0;
+    }
+}  
+
+
+
+#enter:hover{
+    color: orange;
+}
+
+#enter{
+    z-index: 15;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    margin:auto;
+    width: 100%;
+    display: none;
 }

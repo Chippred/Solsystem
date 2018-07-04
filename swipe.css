@@ -1,0 +1,6 @@
+#enter:hover ~ #startskjerm{
+
+-webkit-animation: swipe 1s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
